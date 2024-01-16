@@ -1,0 +1,67 @@
+/* App.css */
+
+/* Reset some default styles and set up the main container */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main container styling */
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Header styling */
+h1 {
+  color: #333;
+}
+
+/* Form element styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #252525;
+}
+
+input,
+select,
+button {
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+/* Button styling */
+button {
+  background-color: #43a8f6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Alert styling */
+.alert {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+/* Add more styling as needed */
