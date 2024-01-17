@@ -1,67 +1,64 @@
-/* App.css */
-
-/* Reset some default styles and set up the main container */
+/* Atur gaya font default dan hapus margin serta padding dari body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+/* Pusatkan konten di dalam komponen App */
+.App {
   text-align: center;
 }
 
-/* Main container styling */
-.container {
-  background-color: #fff;
-  border-radius: 8px;
+/* Gaya bar navigasi dengan latar belakang gelap, padding, dan border-radius */
+nav {
+  background-color: #333;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 20px auto; /* Untuk memposisikan navigasi di tengah dan memberikan ruang atas dan bawah */
+  border-radius: 20px;
+}
+
+/* Hapus gaya default daftar dan padding dari ul navigasi */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gaya item daftar navigasi agar ditampilkan secara horizontal dan tambahkan margin pada setiap item */
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Gaya elemen anchor (link) tanpa garis bawah, warna putih, tebal, dan ukuran font 18px */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Ubah warna link saat dihover menjadi kuning dan tambahkan border-radius untuk efek melingkar */
+nav ul li a:hover {
+  color: #ffcc00;
   border-radius: 10px;
 }
 
-/* Header styling */
-h1 {
-  color: #333;
+/* Tambahkan margin ke elemen container */
+.container {
+  margin: 20px;
 }
 
-/* Form element styling */
-label {
-  display: block;
-  margin-bottom: 8px;
-  color: #252525;
-}
-
-input,
-select,
-button {
-  padding: 8px;
-  margin-bottom: 16px;
-  border-radius: 5px;
-}
-
-/* Button styling */
-button {
-  background-color: #43a8f6;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-/* Alert styling */
+/* Gaya untuk alert, seperti menampilkan pesan kesalahan */
 .alert {
-  background-color: #f44336;
-  color: white;
+  background-color: #f8d7da;
+  color: #721c24;
   padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
+  margin: 10px 0;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
 }
 
-/* Add more styling as needed */
+/* Anda dapat menambahkan gaya spesifik untuk komponen Anda di bawah komentar ini */
