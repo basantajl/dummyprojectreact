@@ -1,10 +1,11 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import LoanCalculator from "./Components/LoanCalculator"
-import BMICalculator from "./Components/BMICalculator"
+import BMICalculator from "./Components/BmiCalculator"
 import PriceCalculator from "./Components/PriceCalculator"
 import NumberConverter from "./Components/NumberConverter"
 import Home from "./Components/Home"
+import Footer from "./Components/Footer"
 import "./App.css"
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
           <Route path="/price-calculator" element={<PriceCalculator />} />
           <Route path="/number-converter" element={<NumberConverter />} />
         </Routes>
+        <div className="App">
+          <Footer /> {/* Include the Footer component here */}
+        </div>
       </div>
     </Router>
   )

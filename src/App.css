@@ -42,8 +42,12 @@ a {
 
 /* Ubah warna link saat dihover menjadi kuning dan tambahkan border-radius untuk efek melingkar */
 nav ul li a:hover {
+  display: block;
   color: #ffcc00;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.249);
+  height: 20px;
+  width: 110%;
 }
 
 /* Tambahkan margin ke elemen container */
@@ -62,3 +66,15 @@ nav ul li a:hover {
 }
 
 /* Anda dapat menambahkan gaya spesifik untuk komponen Anda di bawah komentar ini */
+
+footer {
+  height: 80px;
+  background-color: #252525;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 20px 30px 0 0;
+}
