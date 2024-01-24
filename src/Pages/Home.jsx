@@ -4,7 +4,8 @@ function Home() {
   return (
     <div>
       <h1 className="home-about">About Component</h1>
-          </div>
+      <h2>Welcome to Praktikum1 Calculator webisite </h2>
+    </div>
   )
 }
 

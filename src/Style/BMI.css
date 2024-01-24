@@ -1,0 +1,76 @@
+/* BMI.css */
+
+.bmicalculator-container {
+  /* Styling for the container */
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.bmicalculator-title {
+  /* Styling for the title */
+  color: #333;
+}
+
+label {
+  /* Styling for labels */
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input {
+  /* Styling for input fields */
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Styling for the button with class "bmicalculator-button" */
+.bmicalculator-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Styling for the button without class */
+button {
+  /* Your default button styles go here */
+  /* For example, you can use default button styles if no class is specified */
+}
+
+button:hover {
+  /* Styling for button on hover */
+  background-color: #0056b3;
+}
+
+.alert {
+  /* Styling for alert message */
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+h2 {
+  /* Styling for h2 elements */
+  margin-top: 20px;
+  color: #333;
+}
+
+p {
+  /* Styling for paragraphs */
+  margin: 10px 0;
+}

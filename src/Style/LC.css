@@ -1,0 +1,49 @@
+/* LoanCalculator.css */
+
+.LoanCalculator {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.LoanCalculator label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.LoanCalculator input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.LoanCalculator button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.LoanCalculator button:hover {
+  background-color: #0056b3;
+}
+
+.LoanCalculator .errorMessage {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.LoanCalculator h2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.LoanCalculator p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}

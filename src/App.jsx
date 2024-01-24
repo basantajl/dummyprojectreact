@@ -1,10 +1,12 @@
+// App.js
 import React from "react"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
-import LoanCalculator from "./Components/LoanCalculator"
-import BMICalculator from "./Components/BmiCalculator"
-import PriceCalculator from "./Components/PriceCalculator"
-import NumberConverter from "./Components/NumberConverter"
-import Home from "./Components/Home"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Navbar from "./Components/Navbar"
+import LoanCalculator from "./Pages/LoanCalculator"
+import BMICalculator from "./Pages/BmiCalculator"
+import PriceCalculator from "./Pages/PriceCalculator"
+import NumberConverter from "./Pages/NumberConverter"
+import Home from "./Pages/Home"
 import Footer from "./Components/Footer"
 import "./App.css"
 
@@ -12,26 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/home">Home</Link>
-            </li>
-            <li>
-              <Link to="/loan-calculator">Loan Calculator</Link>
-            </li>
-            <li>
-              <Link to="/bmi-calculator">BMI Calculator</Link>
-            </li>
-            <li>
-              <Link to="/price-calculator">Price Calculator</Link>
-            </li>
-            <li>
-              <Link to="/number-converter">Number Converter</Link>
-            </li>
-          </ul>
-        </nav>
-
+        <Navbar /> {/* Use the Navbar component here */}
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/loan-calculator" element={<LoanCalculator />} />
@@ -40,7 +23,7 @@ function App() {
           <Route path="/number-converter" element={<NumberConverter />} />
         </Routes>
         <div className="App">
-          <Footer /> {/* Include the Footer component here */}
+          <Footer />
         </div>
       </div>
     </Router>

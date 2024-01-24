@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import "../Style/PC.css"
 
 const PriceCalculator = () => {
   const [purchasePrice, setPurchasePrice] = useState("")
@@ -28,9 +29,9 @@ const PriceCalculator = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>Price Calculator</h1>
-      <div>
+      <div className="input-container">
         <label>Purchase Price:</label>
         <input
           type="number"
@@ -38,7 +39,7 @@ const PriceCalculator = () => {
           onChange={(e) => setPurchasePrice(e.target.value)}
         />
       </div>
-      <div>
+      <div className="input-container">
         <label>Tax Rate (%):</label>
         <input
           type="number"
@@ -46,7 +47,7 @@ const PriceCalculator = () => {
           onChange={(e) => setTaxRate(e.target.value)}
         />
       </div>
-      <div>
+      <div className="input-container">
         <label>Discount (%):</label>
         <input
           type="number"
@@ -54,11 +55,11 @@ const PriceCalculator = () => {
           onChange={(e) => setDiscount(e.target.value)}
         />
       </div>
-      <div>
+      <div className="button-container">
         <button onClick={calculateFinalPrice}>Calculate Final Price</button>
       </div>
       {finalPrice !== null && (
-        <div>
+        <div className="final-price-container">
           <h2>Final Price:</h2>
           <p>Rp {finalPrice}</p>
         </div>

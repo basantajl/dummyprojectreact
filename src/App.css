@@ -76,5 +76,64 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-radius: 20px 30px 0 0;
+  border-radius: 0px 20px 50px 0 0;
+}
+
+/* Additional styles for BMI Calculator */
+
+.BMICalculator {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.BMICalculator h1 {
+  color: #333;
+}
+
+.BMICalculator label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.BMICalculator input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.BMICalculator button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.BMICalculator button:hover {
+  background-color: #45a049;
+}
+
+.BMICalculator .alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.BMICalculator h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.BMICalculator p {
+  margin: 5px 0;
+  color: #333;
 }
